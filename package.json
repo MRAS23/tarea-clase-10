@@ -1,0 +1,22 @@
+{
+  "name": "tarea-clase-10",
+  "version": "1.0.0",
+  "description": "tarea de la clase 10 del curso argentina programa, se pide implementar bootstrap en las tareas anteriores.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MRAS23/tarea-clase-10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MRAS23/tarea-clase-10/issues"
+  },
+  "homepage": "https://github.com/MRAS23/tarea-clase-10#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
