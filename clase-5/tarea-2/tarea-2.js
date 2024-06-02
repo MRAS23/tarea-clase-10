@@ -17,13 +17,13 @@ Ejemplo form:
 *
 * */
 
-document.querySelector("#ingresar").onclick = function () {
+document.querySelector("#muestra-datos-usuario").onclick = function () {
   const $tituloBienvenida = document.querySelector("#titulo-bienvenida");
   const $primerNombre = document.querySelector("#primer-nombre-usuario");
   const $segundoNombre = document.querySelector("#segundo-nombre-usuario");
   const $apellido = document.querySelector("#apellido-usuario");
   const $edad = document.querySelector("#edad-usuario");
-  const $resultado = document.querySelector("#resultado");
+  const $resultado = document.querySelector("#datos-usuario");
 
   $resultado.value = `${$primerNombre.value} ${$segundoNombre.value} ${$apellido.value} ${$edad.value}`;
   $tituloBienvenida.textContent = `Bienvenido, ${$primerNombre.value}!`;
@@ -31,7 +31,7 @@ document.querySelector("#ingresar").onclick = function () {
   return false;
 };
 
-document.querySelector("#boton-limpiar").onclick = function () {
+document.querySelector("#limpia-datos-usuario").onclick = function () {
   const $tituloBienvenida = document.querySelector("#titulo-bienvenida");
 
   $tituloBienvenida.textContent = "Bienvenido !";
