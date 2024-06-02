@@ -1,3 +1,35 @@
 .oculto {
   display: none;
 }
+
+body {
+  background-color: rgb(230, 230, 230);
+  font-family: "Poppins", sans-serif;
+}
+
+.container-flex {
+  background-color: rgb(50, 205, 50);
+  color: green;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-image: url(https://images.unsplash.com/photo-1618333775630-73109ed3e69b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=769&q=80);
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.form-label {
+  margin-top: 10px;
+}
+
+#agrega-inputs {
+  background-color: rgb(60, 179, 113);
+  margin-bottom: 20px;
+  border: none;
+}
+
+#calcular {
+  background-color: rgb(60, 179, 113);
+  border: none;
+}

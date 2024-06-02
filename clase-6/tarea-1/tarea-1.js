@@ -10,7 +10,7 @@ document.querySelector("#agrega-inputs").onclick = function (event) {
   const $cantidadIntegrantes = document.querySelector("#cantidad-integrantes");
   const cantidadIntegrantes = Number($cantidadIntegrantes.value);
 
-  mostrarElemento("borrar-todo");
+  mostrarElemento("borrar-todo", "btn btn-secondary");
   borrarIntegrantes();
   crearVariosIntegrantes(cantidadIntegrantes);
 
@@ -26,7 +26,7 @@ function borrarIntegrantes() {
 
 function crearVariosIntegrantes(cantidadIntegrantes) {
   if (cantidadIntegrantes > 0) {
-    mostrarElemento("calcular");
+    mostrarElemento("calcular", "btn btn-primary");
   } else {
     resetear();
   }
@@ -73,7 +73,7 @@ document.querySelector("#calcular").onclick = function (event) {
   document.querySelector("#menor-edad").value = `${menorEdad}`;
   document.querySelector("#promedio-edad").value = `${promedioEdades}`;
 
-  mostrarElemento("calculo");
+  mostrarElemento("calculo", "");
 
   event.preventDefault();
 };
@@ -135,6 +135,6 @@ function ocultarElemento(id) {
   document.querySelector("#" + id).className = "oculto";
 }
 
-function mostrarElemento(id) {
-  document.querySelector("#" + id).className = "";
+function mostrarElemento(id, className) {
+  document.querySelector("#" + id).className = className;
 }
