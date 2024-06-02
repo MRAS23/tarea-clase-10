@@ -1,0 +1,35 @@
+body {
+  font-family: "Bebas Neue", cursive;
+  background-color: lightgray;
+}
+
+h1 {
+  position: static;
+  color: lightgray;
+  text-align: left;
+  background-color: gray;
+}
+
+.container {
+  font-size: x-large;
+}
+
+.form-control {
+  font-size: large;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#muestra-datos-usuario {
+  font-size: large;
+  text-align: center;
+  background-color: black;
+  border-color: black;
+}
+
+#limpia-datos-usuario {
+  font-size: large;
+  text-align: center;
+  background-color: rgb(124, 0, 0);
+  border-color: rgb(124, 0, 0);
+}

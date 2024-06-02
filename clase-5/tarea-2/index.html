@@ -5,24 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clase 5 - tarea 2</title>
-    <h1 id="titulo-bienvenida">Bienvenido!</h1>
+    <link rel="stylesheet" href="..\..\node_modules\bootstrap\dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <form>
-      <label for="primer-nombre-usuario">Primer Nombre:</label>
-      <input type="text" placeholder="Ingresá tu primer nombre" id="primer-nombre-usuario" />
-      <label for="segundo-nombre-usuario">Segundo Nombre:</label>
-      <input type="text" placeholder="Ingresá tu segundo nombre" id="segundo-nombre-usuario" />
-      <label for="apellido-usuario">Apellido:</label>
-      <input type="text" placeholder="Ingresá tu apellido" id="apellido-usuario" />
-      <label for="edad-usuario">Edad:</label>
-      <input type="number" placeholder="Ingresá tu edad" id="edad-usuario" />
-      <input type="submit" value="Ingresar" id="ingresar" />
-      <input id="boton-limpiar" type="reset" value="Limpiar" />
-      <br />
-      <br />
-      <input id="resultado" disabled type="text" />
-    </form>
+    <div class="container">
+      <div class="row">
+        <header>
+          <h1 class="display-1" id="titulo-bienvenida">Bienvenido!</h1>
+        </header>
+      </div>
+    </div>
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="primer-nombre">Ingresá tu nombre completo:</label>
+            <input type="text" class="form-control" placeholder="Primer nombre" id="primer-nombre-usuario" />
+            <input type="text" class="form-control" placeholder="Segundo nombre" id="segundo-nombre-usuario" />
+            <input type="text" class="form-control" placeholder="Apellido/s" id="apellido-usuario" />
+            <input type="number" class="form-control" placeholder="Edad" id="edad-usuario" />
+            <button type="button" id="muestra-datos-usuario" class="btn btn-primary">Mostrar</button>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <br />
+              <label>Datos</label>
+              <input type="text" class="form-control" id="datos-usuario" disabled />
+              <button type="reset" class="btn btn-primary" id="limpia-datos-usuario">Limpiar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
     <script type="text/javascript" src="tarea-2.js"></script>
   </body>
 </html>
