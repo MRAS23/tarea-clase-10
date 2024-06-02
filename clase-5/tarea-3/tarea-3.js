@@ -41,3 +41,9 @@ document.querySelector("#calcula-tiempo-videos").onclick = function () {
 
   return false;
 };
+
+document.querySelector("#limpia-datos-videos").onclick = function () {
+  const $tiempoTotalVideos = document.querySelector("#cantidad-tiempo-total-videos");
+
+  $tiempoTotalVideos.innerText = "";
+};
