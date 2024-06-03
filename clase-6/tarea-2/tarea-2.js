@@ -107,7 +107,7 @@ function calculaPromedioSalariosAnuales(salariosAnuales) {
 }
 
 function mostrarBotonCalculo() {
-  document.querySelector("#calcular").className = "";
+  document.querySelector("#calcular").className = "btn btn-primary";
 }
 
 function ocultarBotonCalculo() {
