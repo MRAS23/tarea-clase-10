@@ -10,7 +10,7 @@ document.querySelector("#agregar-input").onclick = function (event) {
   event.preventDefault();
 
   crearIntegrante();
-  mostrarBotonCalculo();
+  mostrarElemento("calcular", "btn btn-primary");
 };
 
 function crearIntegrante() {
@@ -37,8 +37,8 @@ document.querySelector("#eliminar-input").onclick = function (event) {
   for (let i = $integrantes.length - 1; i < $integrantes.length; i++) {
     $integrantes[i].remove();
     if (i === 0) {
-      ocultarBotonCalculo();
-      ocultarCalculos();
+      ocultarElemento("calcular");
+      ocultarElemento("calculo");
     }
   }
 
@@ -64,7 +64,7 @@ document.querySelector("#calcular").onclick = function (event) {
   const promedioSalariosAnuales = calculaPromedioSalariosAnuales(salariosAnuales);
   const promedioSalariosMensuales = calculaPromedioSalariosAnuales(salariosAnuales) / 12;
 
-  mostrarCalculos();
+  mostrarElemento("calculo", "");
 
   document.querySelector("#mayor-salario-anual").value = `${mayorSalarioAnual}`;
   document.querySelector("#menor-salario-anual").value = `${menorSalarioAnual}`;
@@ -106,18 +106,10 @@ function calculaPromedioSalariosAnuales(salariosAnuales) {
   return promedioSalariosAnuales;
 }
 
-function mostrarBotonCalculo() {
-  document.querySelector("#calcular").className = "btn btn-primary";
+function ocultarElemento(id) {
+  document.querySelector("#" + id).className = "oculto";
 }
 
-function ocultarBotonCalculo() {
-  document.querySelector("#calcular").className = "oculto";
-}
-
-function mostrarCalculos() {
-  document.querySelector("#calculo").className = "";
-}
-
-function ocultarCalculos() {
-  document.querySelector("#calculo").className = "oculto";
+function mostrarElemento(id, className) {
+  document.querySelector("#" + id).className = className;
 }
